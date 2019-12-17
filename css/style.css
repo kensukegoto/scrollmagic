@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  vertical-align: bottom;
+}
+li{
+  list-style-type: none;
+}
+header{
+  height: 300px;
+  background-color: orange;
+}
+.gnavi{
+  width: 100%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transition: transform .3s;
+  transform: translateY(0);
+  background-color: #fff;
+}
+
+.gnavi.on{
+  transform: translateY(48px);
+}
+.gnavi ul{
+  display: flex;
+  height: 48px;
+  width: 960px;
+  margin: 0 auto;
+}
+.gnavi li{
+  display: flex;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gnavi li p{
+  padding: 4px 8px;
+  border: 1px solid #aaa;
+  border-radius: 15px;
+}
+.gnavi .active p{
+  background-color: #000;
+  color: #fff;
+}
+.sec{
+  min-height: 500px;
+}
+#sec1 .sec__inner{
+  background-image: url(../images/sea.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+}
+
+#sec1 .sec__inner h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 28px;
+  
+}
+#sec1 .sec__inner ul {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+#sec1 .sec__inner li {
+  width: calc(50% - 12px);
+  margin-bottom: 16px;
+  background-color: #fff;
+  padding: 16px;
+}
+.anchor{
+  padding: 12px 0;
+  width: 200px;
+  margin: 0 auto;
+  background-color: lightcoral;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 15px;
+}
